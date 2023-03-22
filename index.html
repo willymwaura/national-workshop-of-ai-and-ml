@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>TheEvent - Bootstrap Event Template</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/venobox/venobox.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+ 
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Montserrat:900|Raleway:400,400i,700,700i);
+/*** FONTS ***/
+/*** VARIABLES ***/
+/* Colors */
+/*** EXTEND ***/
+/* box-shadow */
+ ol.gradient-list > li, ol.gradient-list > li::before {
+	 box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05), 0 0.5rem 1.125rem rgba(75, 0, 0, 0.05);
+}
+/*** STYLE ***/
+ *, *:before, *:after {
+	 box-sizing: border-box;
+}
+
+.left {
+    flex: 1;
+  }
+  
+  .right {
+    flex: 1;
+  }
+ .speak {
+	 display: block;
+	 margin: 0 auto;
+	 max-width: 40rem;
+	 padding: 1rem;
+   align-items: center;
+   background-color: gray;
+}
+ ol.gradient-list {
+	 counter-reset: gradient-counter;
+	 list-style: none;
+	 margin: 1.75rem 0;
+	 padding-left: 1rem;
+}
+ ol.gradient-list > li {
+	 background: white;
+	 border-radius: 0 0.5rem 0.5rem 0.5rem;
+	 counter-increment: gradient-counter;
+	 margin-top: 1rem;
+	 min-height: 3rem;
+	 padding: 1rem 1rem 1rem 3rem;
+	 position: relative;
+}
+ ol.gradient-list > li::before, ol.gradient-list > li::after {
+	 background: linear-gradient(135deg, #83e4e2 0%, #a2ed56 100%);
+	 border-radius: 1rem 1rem 0 1rem;
+	 content: '';
+	 height: 3rem;
+	 left: -1rem;
+	 overflow: hidden;
+	 position: absolute;
+	 top: -1rem;
+	 width: 3rem;
+}
+ ol.gradient-list > li::before {
+	 align-items: flex-end;
+	 content: counter(gradient-counter);
+	 color: #1d1f20;
+	 display: flex;
+	 font: 900 1.5em/1 'Montserrat';
+	 justify-content: flex-end;
+	 padding: 0.125em 0.25em;
+	 z-index: 1;
+}
+ ol.gradient-list > li:nth-child(10n+1):before {
+	 background: linear-gradient(135deg, rgba(162, 237, 86, 0.2) 0%, rgba(253, 220, 50, 0.2) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+2):before {
+	 background: linear-gradient(135deg, rgba(162, 237, 86, 0.4) 0%, rgba(253, 220, 50, 0.4) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+3):before {
+	 background: linear-gradient(135deg, rgba(162, 237, 86, 0.6) 0%, rgba(253, 220, 50, 0.6) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+4):before {
+	 background: linear-gradient(135deg, rgba(162, 237, 86, 0.8) 0%, rgba(253, 220, 50, 0.8) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+5):before {
+	 background: linear-gradient(135deg, rgba(162, 237, 86, 1) 0%, rgba(253, 220, 50, 1) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+6):before {
+	 background: linear-gradient(135deg, rgba(162, 237, 86, 0.8) 0%, rgba(253, 220, 50, 0.8) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+7):before {
+	 background: linear-gradient(135deg, rgba(162, 237, 86, 0.6) 0%, rgba(253, 220, 50, 0.6) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+8):before {
+	 background: linear-gradient(135deg, rgba(162, 237, 86, 0.4) 0%, rgba(253, 220, 50, 0.4) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+9):before {
+	 background: linear-gradient(135deg, rgba(162, 237, 86, 0.2) 0%, rgba(253, 220, 50, 0.2) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+10):before {
+	 background: linear-gradient(135deg, rgba(162, 237, 86, 0) 0%, rgba(253, 220, 50, 0) 100%);
+}
+ ol.gradient-list > li + li {
+	 margin-top: 2rem;
+}
+ 
+  </style>
+
+    
+
+
+  <!-- =======================================================
+    Theme Name: TheEvent
+    Theme URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+    
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#intro">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#speak">Organisers</a></li>
+          <li><a href="#supporters">Sponsors</a></li>
+         
+        
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+    <div class="intro-container wow fadeIn">
+      <h1 class="mb-4 pb-0">National  Workshop on <br><span>Artificial Intelligence and Machine Learning</h1>
+      <p class="mb-4 pb-0">Friday,19 th May 2023, African Institute for capacity development(AICAD)</p>
+
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfd2TTSwaFunuXakBhm9v9oFUGHbhZQQJ7-UmeYaclRu-NLZA/viewform?usp=sf_link" class="about-btn scrollto">register for the event</a>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <!--==========================
+      About Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>About The Event</h2>
+            <p>Its National Workshop on AI/ML organized by Jomo Kenyatta University of Agriculture and Technology (JKUAT), Department of Computing, with support from the African Centre for Technology Studies (ACTS). This workshop presents an opportunity for PhD and Masters students to showcase their research work in Artificial Intelligence and Machine Learning. We invite students, faculty members, researchers, and professionals from academia and industry to participate in this event.
+              The theme of the workshop is Supporting Postgraduate Students in Publication. The workshop will provide a platform for postgraduate students to present their research work and receive feedback from experts in the field. The workshop aims to foster collaborations, promote networking and encourage knowledge sharing among participants.
+              The workshop will feature presentations from PhD and master’s students on their research work in AI/ML. The presentations will be followed by a panel discussion on postgraduate students' challenges in publishing their research work. The panel discussion will be moderated by field experts and will allow participants to ask questions and share their experiences.
+              In addition to the presentations and panel discussions, the workshop will include networking opportunities where participants can meet and interact with other researchers and professionals in the field. Take advantage of this opportunity to engage with peers and experts in the field and learn about the latest trends and developments in AI/ML research trends and developments.</p>
+          </div>
+          <div class="col-lg-3">
+            <h3>Where</h3>
+            <p>African Institute for capacity development(AICAD), JKUAT</p>
+          </div>
+          <div class="col-lg-3">
+            <h3>When</h3>
+            <p>Friday<br>19 th, May 2023,</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==========================
+      Speakers Section
+    ============================-->
+    <div style="background-color: grey;">
+    <div class="section-header">
+      <h2>Organisers</h2>
+    </div>
+
+    <section id="speak">
+     
+      
+        <ol class="gradient-list">
+          <li>Dr.Lawrence Nderu</li>
+          <li>Dr.Richard Rimiru</li>
+          <li>Dr.Isaiah Mulang'</li>
+          <li>Prof.Stephen  Kimani</li>
+          <li>Dr.Eunice Njeri</li>
+          <li>Dr.Karanja Mwangi</li>
+          <li>Dr.Petronilla Muriithi</li>
+          <li>Prof.Joseph Wafula</li>
+          <li>Dr.Henry Mwangi</li>
+          <li>Dr.Agnes Mindila</li>
+         
+         
+        
+        </ol>
+    
+    
+
+    </section>
+    </div>
+
+    <!--==========================
+      Schedule Section
+   
+        
+
+
+    <!==========================
+      Sponsors Section
+    ============================-->
+    <section id="supporters" class="section-with-bg wow fadeInUp">
+
+      <div class="container">
+        <div class="section-header">
+          <h2>Sponsors</h2>
+        </div>
+        <div style="display: flex;justify-content: space-between;">
+          <div class="left"> <img src="img/one.jpg" class="img-fluid" alt=""></div>
+          <div class="right"> <img src="img/jkuat.jpg" class="img-fluid" alt=""></div>
+        </div>
+
+       
+          
+         
+        
+        
+          
+      
+          
+      
+       
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!--==========================
+      F.A.Q Section
+   
+
+   
+  
+
+   
+
+
+    <!--==========================
+      Contact Section
+    
+ ====================
+    Footer
+  ============================-->
+  <footer id="footer">
+   
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
+        -->
+        Designed by <a href="https://github.com/willymwaura">willy</a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/venobox/venobox.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
